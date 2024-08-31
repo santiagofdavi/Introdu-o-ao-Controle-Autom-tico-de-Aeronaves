@@ -1,0 +1,218 @@
+<PropertyList>
+    <generic>
+        <output>
+            <line_separator>newline</line_separator>
+            <var_separator>,</var_separator>
+            <chunk> <!--Tempo (s)-->
+                <name>time (sec)</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/sim/time/elapsed-sec</node>
+            </chunk>
+            <chunk> <!--Velocidade total [ft/s]-->
+                <name>VT</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/velocities/vt-fps</node>
+            </chunk>
+            <chunk> <!--Ângulo de ataque [rad]-->
+                <name>alpha</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/alpha-rad</node>
+            </chunk>
+            <chunk> <!--Ângulo de derrapagem [rad]-->
+                <name>beta</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/beta-rad</node>
+            </chunk>
+            <chunk> <!--Roll [rad]-->
+                <name>roll</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/attitude/phi-rad</node>
+            </chunk>
+            <chunk> <!--Pitch [rad]-->
+                <name>pitch</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/attitude/theta-rad</node>
+            </chunk>
+            <chunk> <!--Yaw [rad]-->
+                <name>yaw</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/attitude/psi-rad</node>
+            </chunk>
+            <chunk> <!--P [rad/s]-->
+                <name>p</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/velocities/p-aero-rad_sec</node>
+            </chunk>
+            <chunk> <!--Q [rad/s]-->
+                <name>q</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/velocities/q-aero-rad_sec</node>
+            </chunk>
+            <chunk> <!--R [rad/s]-->
+                <name>r</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/velocities/r-aero-rad_sec</node>
+            </chunk>
+            <chunk> <!--Altitude [m]-->
+                <name>H</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/position/h-sl-meters</node>
+            </chunk>
+            <chunk> <!--Deflexão do aileron-->
+                <name>aileron_deflexion</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/fcs/left-aileron-pos-rad</node>
+            </chunk>
+            <chunk> <!--Deflexão do profundor-->
+                <name>elevator_deflexion</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/fcs/elevator-pos-rad</node>
+            </chunk>
+            <chunk> <!--Deflexão do leme-->
+                <name>rudder_deflexion</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/fcs/rudder-pos-rad</node>
+            </chunk>
+            <chunk><!--Força de arrasto [lbf]-->
+                <name>D</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/forces/fwx-aero-lbs</node>
+            </chunk>
+            <chunk> <!--Força de sustentação [lbf]-->
+                <name>L</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/forces/fwz-aero-lbs</node>
+            </chunk>
+            <chunk> <!--Força lateral [lbf]-->
+                <name>Y</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/forces/fwy-aero-lbs</node>
+            </chunk>
+            <chunk> <!--Força de tração [lbf]-->
+                <name>T</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/forces/fbx-prop-lbs</node>
+            </chunk>
+            <chunk> <!--Momento de rolamento [lbf-ft]-->
+                <name>L_bar</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/moments/l-aero-lbsft</node>
+            </chunk>
+            <chunk> <!--Momento de arfagem [lbf-ft]-->
+                <name>M</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/moments/m-aero-lbsft</node>
+            </chunk>
+            <chunk> <!--Momento de guinada [lbf-ft]-->
+                <name>N</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/moments/n-aero-lbsft</node>
+            </chunk>
+            <chunk> <!--Pressão dinâmica [psf]-->
+                <name>q_bar</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/qbar-psf</node>
+            </chunk>
+            <chunk> <!--Pressão dinâmica total [psf]-->
+                <name>q_bar_total</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/qbar-total-psf</node>
+            </chunk>
+            <chunk>
+                <name>cl_beta</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Roll_beta</node>
+            </chunk>
+            <chunk>
+                <name>cl_p</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Roll_damp</node>
+            </chunk>
+            <chunk>
+                <name>cl_r</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Roll_yaw</node>
+            </chunk>
+            <chunk>
+                <name>cl_ail</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Roll_aileron</node>
+            </chunk>
+            <chunk>
+                <name>cm_alpha</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Pitch_alpha</node>
+            </chunk>
+            <chunk>
+                <name>cm_elev</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Pitch_elevator</node>
+            </chunk>
+            <chunk>
+                <name>cm_q</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Pitch_rate</node>
+            </chunk>
+            <chunk>
+                <name>cm_alphadot</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Pitch_alphadot</node>
+            </chunk>
+            <chunk>
+                <name>cn_beta</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Yaw_beta</node>
+            </chunk>
+            <chunk>
+                <name>cn_damp</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Yaw_damp</node>
+            </chunk>
+            <chunk>
+                <name>cn_rudder</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Yaw_rudder</node>
+            </chunk>
+            <chunk>
+                <name>cn_ail</name>
+                <type>float</type>
+                <format>%.4f</format>
+                <node>/fdm/jsbsim/aero/moment/Yaw_aileron</node>
+            </chunk>
+        </output>
+    </generic>
+</PropertyList>
